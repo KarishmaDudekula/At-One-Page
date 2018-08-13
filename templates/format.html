@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>C Programming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Programming Tutorial</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="/courses">Courses</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/homepage">Courses</a></li>
+        {% if session.logged_in %}
+          <li><a href="/logout">Logout</a></li>
+        {% else %}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Log in</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="/c" class="w3-bar-item w3-button">Introduction</a>
+  <a href = "/io" class="w3-bar-item w3-button">Input And Output</a>
+  <a href = "/format" class="w3-bar-item w3-button">Format Specifiers</a>
+  <a href = "/variables" class="w3-bar-item w3-button">Variables and Types </a>
+  <a href="/firstprogram" class="w3-bar-item w3-button">First Program</a>
+  <a href="#" class="w3-bar-item w3-button">Strings</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+<div class="w3-container w3-teal">
+  <h1>Format Specifiers</h1>
+</div>
+<br>
+<font size = '3'>Format specifiers can be defined as the operators which are used in association with <b>printf()</b> function for printing the data that is referred by any object or any variable. When a value is stored in a particular variable then you cannot print the value stored in the variable straightforwardly without using the format specifiers. You can retrieve the data that are stored in the variables and can print them onto the console screen by implementing these format specifiers in a <b>printf()</b> function.</font>
+<br>
+<font size = '3'>Format specifiers start with a percentage <b>%</b> operator and followed by a special character for identifying the type of the data.</font>
+<br>
+<font size = '3'>There are mostly <b>6 types of format specifiers</b> that are available in C.</font>
+
+<div class="w3-container">
+<h2><i>List of format specifiers in c</i></h2>
+<table border = '3'>
+<tr>
+ <th><center>Format Specifier</center> </th>
+ <th><center>Description</center></th>
+</tr>
+<br>
+<tr>
+ <td><center>%d</center></td>
+ <td>Integer Format Specifier</td>
+</tr>
+<tr>
+  <td><center>%f</center></td>
+  <td>Float Format Specifier</td>
+ </tr>
+ <tr>
+   <td><center>%c</center></td>
+   <td>Character Format Specifier</td>
+  </tr>
+  <tr>
+    <td><center>%s</center></td>
+    <td>String Format Specifier</td>
+   </tr>
+   <tr>
+     <td><center>%u</center></td>
+     <td>Unsigned Integer Format Specifier</td>
+    </tr>
+    <tr>
+      <td><center>%ld</center></td>
+      <td>Long Int Format Specifier</td>
+     </tr>
+</div>
+<br>
+<div class="w3-container">
+<h2><i>Integer Format Specifier %d</i></h2>
+<br>
+<font size = '3'>The <b>%d</b> format specifier is implemented for representing integer values. This is used with <b>printf()</b> function for printing the integer value stored in the variable.</b>
+<h3><u>Syntax</u></h3>
+<div style="background-color:black;color:white;padding:10px;">
+<font size = '3'>printf("%d",</font><font size = '3'><</font><font size = '3'>variable("%d",</font><font size = '3'>_name);</font>
+</div>
+</div>
+</body>
+</html>

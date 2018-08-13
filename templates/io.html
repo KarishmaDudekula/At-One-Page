@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>C Programming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Programming Tutorial</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="/courses">Courses</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/homepage">Courses</a></li>
+        {% if session.logged_in %}
+          <li><a href="/logout">Logout</a></li>
+        {% else %}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Log in</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="/c" class="w3-bar-item w3-button">Introduction</a>
+  <a href = "/io" class="w3-bar-item w3-button">Input And Output</a>
+  <a href = "/variables" class="w3-bar-item w3-button">Variables and Types </a>
+  <a href="/firstprogram" class="w3-bar-item w3-button">First Program</a>
+  <a href="#" class="w3-bar-item w3-button">Strings</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+<div class="w3-container w3-teal">
+  <h1>Input And Output</h1>
+</div>
+<br>
+<font size = '3'>As we all know the three essential functions of a computer are reading, processing and writing data. Majority of the programs take data as input, and then after processing the processed data is being displayed which is called information. In C programming you can use <b>scanf()</b> and <b>printf()</b> predefined function to read and print data.</font>
+<br>
+<h3>Example</h3>
+<div style="background-color:black;color:black;padding:10px;">
+<font size = '3' color = 'brown'>#include</font> <font size = '3' color = 'green'><</font><font size = '3' color = 'green'>stdio.h></font>
+<br>
+<font size = '3' color = 'blue'>int</font> <font size = '3' color = 'white'>main() {</font>
+<br>
+          <font size = '3' color = 'blue'>int</font>  <font size = '3' color = 'white'>a,b,c;</font>
+<br>
+          <font size = '3' color = 'blue'>printf</font><font size = '3' color = 'white'>(</font><font size = '3' color = 'white'>"Enter any three numbers");</font>
+<br>
+          <font size = '3' color = 'blue'>scanf</font><font size = '3' color = 'white'>(</font><font size = '3' color = 'pink'>"%d %d %d"</font><font size = '3' color = 'white'>a,b,c</font><font size = '3' color = 'white'>);</font>
+<br>
+          <font size = '3' color = 'blue'>printf</font><font size = '3' color = 'white'>(</font><font size = '3' color = 'pink'>"The three numbers are:%d %d %d"</font><font size = '3' color = 'white'>a,b,c</font><font size = '3' color = 'white'>);</font>
+<br>
+          <font size = '3' color = 'brown'>return</font>   <font size = '3' color = 'white'>0;</font>
+<br>
+          <font size = '3' color = 'white'>}</font>
+</div>
+<br>
+<h3>Output</h3>
+<div style="background-color:black;color:white;padding:10px;">
+<font size = '3'> Enter any three numbers</font>
+<br>
+<font size = '3'>4,15,6</font>
+<br>
+<font size = '3'>The three numbers are 4,15,6</font>
+<br>
+</div>
+</body>
+</html>
