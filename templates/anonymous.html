@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8" />
+<title>Online programming tutorial</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<!-- GLOBAL MANDATORY STYLES -->
+<link
+	href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700"
+	rel="stylesheet" type="text/css">
+<link href="static/vendor/simple-line-icons/simple-line-icons.min.css"
+	rel="stylesheet" type="text/css" />
+<link href="static/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
+
+<!-- PAGE LEVEL PLUGIN STYLES -->
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/vendor/swiper/css/swiper.min.css" rel="stylesheet"
+	type="text/css" />
+
+<!-- THEME STYLES -->
+<link href="static/css/layout1.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- END HEAD -->
+<style>
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.previous {
+	border-radius: 8px;
+	margin: 24px 250px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #33adff;
+	color: black;
+}
+
+.previous1 {
+	border-radius: 8px;
+	margin: 24px -30px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #ff6699;
+	color: black;
+}
+
+.example {
+	margin-left: 140px;
+	padding: 20px;
+	width: 1050px;
+	background-color: #f2f2f2;
+	border-style: ridge;
+	color: black;
+}
+
+.next {
+	border-radius: 8px;
+	margin: 24px 180px;
+	padding: 12px 34px;
+	font-size: 20px;
+	background-color: #4dff4d;
+	color: black;
+}
+
+.main {
+	margin-left: 120px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+
+#sidenav h2 {
+	font-size: 21px;
+	padding-left: 16px;
+	margin: -4px 0 4px 0;
+	width: 204px;
+}
+
+#sidenav a {
+	font-family: "Segoe UI", Arial, sans-serif;
+	text-decoration: none;
+	display: block;
+	padding: 2px 1px 1px 16px
+}
+
+#sidenav a:hover, #sidenav a:focus {
+	color: #000000;
+	background-color: #4d94ff;
+}
+
+#sidenav a.active {
+	background-color: #66ff66;
+	color: black
+}
+
+#leftmenuinner {
+	position: fixed;
+	top: 0;
+	padding-top: 95px;
+	padding-bottom: 0;
+	height: 100%;
+	width: 220px;
+	background-color: transparent;
+}
+
+#leftmenuinnerinner {
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+#leftmenuinnerinner {
+	overflow-y: scroll
+}
+
+.bottomad {
+	float: none;
+	text-align: center
+}
+
+#skyscraper {
+	min-height: 60px
+}
+
+}
+.p {
+	text-color: #ff0000;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+p.ex1 {
+	margin-right: 50px;
+}
+
+.main1 {
+	margin-left: 50px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+</style>
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+<body id="body" data-spy="scroll" data-target=".header">
+	<!--========== HEADER ==========-->
+	<header class="header navbar-fixed-top">
+		<!-- Navbar -->
+		<nav class="navbar" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="menu-container js_nav-item">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="toggle-icon"></span>
+					</button>
+
+					<!-- Logo -->
+					<div class="logo">
+						<a class="logo-wrap" href="#body"> <img
+							class="logo-img logo-img-main-active"
+							src="static/img/logo-dark.png" alt="Asentus Logo">
+						</a>
+					</div>
+					<!-- End Logo -->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-collapse">
+					<div class="main-container">
+						<ul class="nav navbar-nav navbar-nav-right">
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/homepage">Home</a></li>
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Navbar Collapse -->
+			</div>
+		</nav>
+		<!-- Navbar -->
+	</header>
+	<!--========== END HEADER ==========-->
+	<br>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+<body style="width: 95%">
+
+	<div class="main">
+		<h1 align="center" style="color: #33adff;">Python
+			Anonymous/Lambda Function</h1>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>What are lambda functions in Python?
+					</ul>
+		</h3>
+		<p class="main">
+			In Python, anonymous function is a function that is defined without a
+			name. <br> While normal functions are defined using the def
+			keyword, in Python anonymous functions are defined using the lambda
+			keyword. <br> Hence, anonymous functions are also called lambda
+			functions. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>How to use lambda Functions in Python?
+					</ul>
+		</h3>
+		<p class="main">
+			A lambda function in python has the following syntax. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Syntax of Lambda Function in python
+					</ul>
+		</h3>
+		<p class="example" style="font-size: 17px">
+			lambda arguments: expression <br>
+		<p class="main">
+			ILambda functions can have any number of arguments but only one
+			expression. The expression is evaluated and returned. Lambda
+			functions can be used wherever function objects are required. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Example of Lambda Function in python
+					</ul>
+		</h3>
+		<p class="main">
+			In the above program, lambda x: x * 2 is the lambda function. Here x
+			is the argument and x * 2 is the expression that gets evaluated and
+			returned. <br> This function has no name. It returns a function
+			object which is assigned to the identifier double. We can now call it
+			as a normal function. The statement
+		<p class="example" style="font-size: 17px">
+			double = lambda x: x * 2 <br>
+		<p class="main">
+			is nearly the same as <br>
+		<p class="example" style="font-size: 17px">
+			def double(x):<br> return x * 2<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Use of Lambda Function in python
+					</ul>
+		</h3>
+		<br>
+		<p class="main">
+			We use lambda functions when we require a nameless function for a
+			short period of time. <br> In Python, we generally use it as an
+			argument to a higher-order function (a function that takes in other
+			functions as arguments). Lambda functions are used along with
+			built-in functions like filter(), map() etc. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Example use with filter()
+					</ul>
+		</h3>
+		<p class="main">
+			The filter() function in Python takes in a function and a list as
+			arguments. <br>
+		<p class="main">
+			The function is called with all the items in the list and a new list
+			is returned which contains items for which the function evaluats to
+			True. <br> Here is an example use of filter() function to filter
+			out only even numbers from a list. <br>
+		<p class="example" style="font-size: 17px">
+			# Program to filter out only the even items from a list<br> <br>
+			my_list = [1, 5, 4, 6, 8, 11, 3, 12]<br> <br> new_list =
+			list(filter(lambda x: (x%2 == 0) , my_list))<br> <br> #
+			Output: [4, 6, 8, 12]<br> print(new_list)<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Example use with map()
+					</ul>
+		</h3>
+		<p class="main">
+			The map() function in Python takes in a function and a list. <br>
+			The function is called with all the items in the list and a new list
+			is returned which contains items returned by that function for each
+			item. <br> Here is an example use of map() function to double
+			all the items in a list. <br>
+		<p class="example" style="font-size: 17px">
+			# Program to double each item in a list using map() <br>
+			<br> my_list = [1, 5, 4, 6, 8, 11, 3, 12] <br>
+			<br> new_list = list(map(lambda x: x * 2 , my_list)) <br>
+			<br> # Output: [2, 10, 8, 12, 16, 22, 6, 24]<br>
+			print(new_list)<br>
+	</div>
+	<a href="/recursion" class="previous">&laquo; Previous</a>
+
+	<a href="/globalLocal" class="next">Next &raquo;</a>
+
+
+	<div class='w3-sidebar w3-collapse' id='sidenav'>
+		<div id='leftmenuinner'>
+			<div class='w3-light-grey' id='leftmenuinnerinner'>
+				<h2 align="center">PYTHON</h2>
+				<p>
+				<p class="main1">
+					Introduction<br>
+				<p>
+					<a target="_top" href="/python">Getting Started</a> <a
+						target="_top" href="/silent">Silent features</a> <a target="_top"
+						href="/domain">Domain</a> <a target="_top" href="/syntax">Basic
+						syntax</a> <a target="_top" href="/variables">Variables</a> <a
+						target="_top" href="/dataTypes">Data Types</a> <a target="_top"
+						href="/typeConversion">Type Conversion</a> <a target="_top"
+						href="/input">I/O and Import</a> <a target="_top"
+						href="/operators">Operators</a> <a target="_top" href="/nameSpace">Name
+						Space</a>
+				<p class="main1">
+					Flow Control<br>
+				<p>
+					<a target="_top" href="/ifelse">if...else</a> <a target="_top"
+						href="/forLoop">For Loop</a> <a target="_top" href="/while1">While
+						Loop</a> <a target="_top" href="/breakContinue">Break and continue</a>
+					<a target="_top" href="/pass1">Pass</a>
+				<p class="main1">
+					Functions<br>
+				<p>
+					<a target="_top" href="/function">Function</a> <a target="_top"
+						href="/argument">Argument</a> <a target="_top" href="/recursion">Recursion</a>
+					<a target="_top" a class="active" href="/anonymous">Anonymous
+						Function</a> <a target="_top" href="/globalLocal">Global, Local
+						and Nonlocal</a> <a target="_top" href="/global1">Global Keyword</a> <a
+						target="_top" href="/modules">Modules</a> <a target="_top"
+						href="/package">Package</a>
+				<p class="main1">
+					Datatypes<br>
+				<p>
+					<a target="_top" href="/number">Number</a> <a target="_top"
+						href="/list">List</a> <a target="_top" href="/tuple">Tuple</a> <a
+						target="_top" href="/string">String</a> <a target="_top"
+						href="/set">Set</a> <a target="_top" href="/dictionary">Dictionary</a>
+					<a target="_top" href="/nested">Nested Dictionary</a> <a
+						target="_top" href="/arrays">Arrays</a> <a target="_top"
+						href="/matrix">Matrix</a> <a target="_top" href="/listCompre">List
+						Comprehension</a>
+				<p class="main1">
+					Python Files<br>
+				<p>
+					<a target="_top" href="/fileOperation">File Operation</a> <a
+						target="_top" href="/directory">Directory</a> <a target="_top"
+						href="/exception">Exception</a> <a target="_top"
+						href="/exceptionHand">Exception Handling</a> <a target="_top"
+						href="/userDefined">User-defined Exception</a>
+				<p class="main1">
+					Object Class<br>
+				<p>
+					<a target="_top" href="/oop">Python OOP</a> <a target="_top"
+						href="/class1">Class</a> <a target="_top" href="/inheritance">Inheritance</a>
+					<a target="_top" href="/multipleInterit">Multiple Inheritance</a> <a
+						target="_top" href="/overloading">Operator Overloading</a> <br>
+				</p>
+				<!-- Back To Top -->
+				<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+				<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+				<!-- CORE PLUGINS -->
+				<script src="static/vendor/jquery.min.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery-migrate.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/bootstrap/js/bootstrap.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL PLUGINS -->
+				<script src="static/vendor/jquery.easing.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery.back-to-top.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.smooth-scroll.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.wow.min.js" type="text/javascript"></script>
+				<script src="static/vendor/swiper/js/swiper.jquery.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/jquery.masonry.pkgd.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/imagesloaded.pkgd.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL SCRIPTS -->
+				<script src="static/js/layout.min.js" type="text/javascript"></script>
+				<script src="static/js/components/wow.min.js" type="text/javascript"></script>
+				<script src="static/js/components/swiper.min.js"
+					type="text/javascript"></script>
+				<script src="static/js/components/masonry.min.js"
+					type="text/javascript"></script>
+</body>
+<!-- END BODY -->
+</html>
