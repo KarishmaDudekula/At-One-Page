@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<title>C Programming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Programming Tutorial</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="/contact">Contact us</a></li>
+        <li><a href="/courses">Courses</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/homepage">Courses</a></li>
+        {% if session.logged_in %}
+          <li><a href="/logout">Logout</a></li>
+        {% else %}
+          <li><a href="/register">Register</a></li>
+          <li><a href="/login">Log in</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-light-grey w3-bar-block" style="width:15%">
+  <h3 class="w3-bar-item">Menu</h3>
+  <a href="/c" class="w3-bar-item w3-button">Introduction</a>
+  <a href = "/io" class="w3-bar-item w3-button">Input And Output</a>
+  <a href = "/format" class="w3-bar-item w3-button">Format Specifiers</a>
+  <a href = "/variables" class="w3-bar-item w3-button">Variables and Types </a>
+  <a href="/firstprogram" class="w3-bar-item w3-button">First Program</a>
+  <a href="#" class="w3-bar-item w3-button">Strings</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:15%">
+
+<div class="w3-container w3-teal">
+  <h1>Introduction</h1>
+</div>
+
+<div class="w3-container">
+<h2><i>C Programming</i></h2>
+<p>C is a procedural programming language. It was initially developed by Dennis Ritchie between 1969 and 1973. It was mainly developed as a system programming language to write operating system. The main features of C language include low-level access to memory, simple set of keywords, and clean style, these features make C language suitable for system programming like operating system or compiler development.</p>
+<br>
+<p>C is a very common language, and it is the language of many applications such as Windows, the Python interpreter, Git, and many many more.</p>
+<br>
+<p>C is a compiled language - which means that in order to run it, the compiler (for example, GCC or Visual Studio) must take the code that we wrote, process it, and then create an executable file. This file can then be executed, and will do what we intended for the program to do.</p>
+<br>
+<h2><i>Our First Program</i></h2>
+<p>Every C program uses libraries, which give the ability to execute necessary functions. For example, the most basic function called <b>printf</b> , which prints to the screen, is defined in the <b>stdio.h</b> header file.</p>
+<br>
+<p>To add the ability to run the printf command to our program, we must add following include directive to our first line of the code:</p>
+<div style="background-color:black;color:white;padding:10px;">
+<p><font color = "blue">#include</font> <font color = "pink"> <</font><font color = "pink">stdio.h</font><font color = "pink">></font></p>
+</div>
+<br>
+<p>The second part of the code is the actual code which we are going to write. The first code which will run will always reside in the main function.</p>
+<div style="background-color:black;color:white;padding:10px;">
+<p>
+<font color = "blue"> int</font> <font color = "yellow">main()</font><font color = "white"> { </font></p>
+<p> ---Enter Your Code Here
+</p>
+<p>}</p>
+</div>
+<br>
+<p>The int keyword indicates that the function main will return an integer - a simple number. The number which will be returned by the function indicates whether the program that we wrote worked correctly. If we want to say that our code was run successfully, we will return the number 0. A number greater than 0 will mean that the program that we wrote failed.</p>
+<h3><i>Sample Program</i></h3>
+<div style="background-color:black;color:white;padding:10px;">
+<p><font color = "blue">#include </font>  <font color = "pink"><</font><font color = "pink">stdio.h</font><font color = "pink">></font></p>
+<p><font color = "blue"> int</font> <font color = "yellow">main()</font><font color = "white"> { </font></p>
+<p><font color = "blue">printf</font> (<font color = "red">"Helloworld\n"</font>);</p>
+<p><font color = "pink">return 0;</font></p>
+<p>}</p>
+</div>
+
+</body>
+</html>
