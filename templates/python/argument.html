@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8" />
+<title>Online programming tutorial</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<!-- GLOBAL MANDATORY STYLES -->
+<link
+	href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700"
+	rel="stylesheet" type="text/css">
+<link href="static/vendor/simple-line-icons/simple-line-icons.min.css"
+	rel="stylesheet" type="text/css" />
+<link href="static/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
+
+<!-- PAGE LEVEL PLUGIN STYLES -->
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/vendor/swiper/css/swiper.min.css" rel="stylesheet"
+	type="text/css" />
+
+<!-- THEME STYLES -->
+<link href="static/css/layout1.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- END HEAD -->
+<style>
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.previous {
+	border-radius: 8px;
+	margin: 24px 250px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #33adff;
+	color: black;
+}
+
+.previous1 {
+	border-radius: 8px;
+	margin: 24px -30px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #ff6699;
+	color: black;
+}
+
+.example {
+	margin-left: 140px;
+	padding: 20px;
+	width: 1050px;
+	background-color: #f2f2f2;
+	border-style: ridge;
+	color: black;
+}
+
+.next {
+	border-radius: 8px;
+	margin: 24px 180px;
+	padding: 12px 34px;
+	font-size: 20px;
+	background-color: #4dff4d;
+	color: black;
+}
+
+.main {
+	margin-left: 120px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+
+#sidenav h2 {
+	font-size: 21px;
+	padding-left: 16px;
+	margin: -4px 0 4px 0;
+	width: 204px;
+}
+
+#sidenav a {
+	font-family: "Segoe UI", Arial, sans-serif;
+	text-decoration: none;
+	display: block;
+	padding: 2px 1px 1px 16px
+}
+
+#sidenav a:hover, #sidenav a:focus {
+	color: #000000;
+	background-color: #4d94ff;
+}
+
+#sidenav a.active {
+	background-color: #66ff66;
+	color: black
+}
+
+#leftmenuinner {
+	position: fixed;
+	top: 0;
+	padding-top: 95px;
+	padding-bottom: 0;
+	height: 100%;
+	width: 220px;
+	background-color: transparent;
+}
+
+#leftmenuinnerinner {
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+#leftmenuinnerinner {
+	overflow-y: scroll
+}
+
+.bottomad {
+	float: none;
+	text-align: center
+}
+
+#skyscraper {
+	min-height: 60px
+}
+
+}
+.p {
+	text-color: #ff0000;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+p.ex1 {
+	margin-right: 50px;
+}
+
+.main1 {
+	margin-left: 50px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+</style>
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+<body id="body" data-spy="scroll" data-target=".header">
+	<!--========== HEADER ==========-->
+	<header class="header navbar-fixed-top">
+		<!-- Navbar -->
+		<nav class="navbar" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="menu-container js_nav-item">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="toggle-icon"></span>
+					</button>
+
+					<!-- Logo -->
+					<div class="logo">
+						<a class="logo-wrap" href="#body"> <img
+							class="logo-img logo-img-main-active"
+							src="static/img/logo-dark.png" alt="Asentus Logo">
+						</a>
+					</div>
+					<!-- End Logo -->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-collapse">
+					<div class="main-container">
+						<ul class="nav navbar-nav navbar-nav-right">
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/homepage">Home</a></li>
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Navbar Collapse -->
+			</div>
+		</nav>
+		<!-- Navbar -->
+	</header>
+	<!--========== END HEADER ==========-->
+	<br>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+<body style="width: 95%">
+
+	<div class="main">
+		<h1 align="center" style="color: #33adff;">Python Function
+			Arguments</h1>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Arguments
+					</ul>
+		</h3>
+		<p class="main">
+			In user-defined function topic, we learned about defining a function
+			and calling it. Otherwise, the function call will result into an
+			error. Here is an example. <br>
+		<p class="example" style="font-size: 17px">
+			def greet(name,msg): <br> """This function greets to <br>
+			the person with the provided message""" <br> print("Hello",name
+			+ ', ' + msg) <br> <br> greet("Monica","Good morning!") <br>
+		<p class="main">Output:
+		<p class="example" style="font-size: 17px">
+			Hello Monica, Good morning!<br>
+		<p class="main">
+			Here, the function greet() has two parameters. <br> Since, we
+			have called this function with two arguments, it runs smoothly and we
+			do not get any error. <br> If we call it with different number
+			of arguments, the interpreter will complain. Below is a call to this
+			function with one and no arguments along with their respective error
+			messages. <br>
+		<p class="example" style="font-size: 17px">
+			>>>> greet("Monica") # only one argument<br> TypeError: greet()
+			missing 1 required positional argument: 'msg'<br>
+		<p class="example" style="font-size: 17px">
+			>>> greet() # no arguments<br> TypeError: greet() missing 2
+			required positional arguments: 'name' and 'msg'<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Variable Function Arguments
+						<br>
+					</ul>
+		</h3>
+		<p class="main">
+			Up until now functions had fixed number of arguments. In Python there
+			are other ways to define a function which can take variable number of
+			arguments. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Python Default Arguments
+						<br>
+					</ul>
+		</h3>
+		<p class="main">
+			Function arguments can have default values in Python.<br> <br>
+			We can provide a default value to an argument by using the assignment
+			operator (=). Here is an example.<br> Three different forms of
+			this type are described below.<br> <br>
+		<p class="example" style="font-size: 17px">
+			def greet(name, msg = "Good morning!"):<br> """<br> This
+			function greets to<br> the person with the<br> provided
+			message.<br> <br> If message is not provided,<br> it
+			defaults to "Good<br> morning!"<br> """<br> <br>
+			print("Hello",name + ', ' + msg)<br> <br> greet("Kate")<br>
+			greet("Bruce","How do you do?")<br>
+		<p class="main">
+			In this function, the parameter name does not have a default value
+			and is required (mandatory) during a call. <br> On the other
+			hand, the parameter msg has a default value of "Good morning!". So,
+			it is optional during a call. If a value is provided, it will
+			overwrite the default value. <br> Any number of arguments in a
+			function can have a default value. But once we have a default
+			argument, all the arguments to its right must also have default
+			values. <br> This means to say, non-default arguments cannot
+			follow default arguments. For example, if we had defined the function
+			header above as: <br>
+		<p class="example" style="font-size: 17px">def greet(msg = "Good
+			morning!", name):
+		<p class="main">We would get an error as:
+		<p class="example" style="font-size: 17px">SyntaxError:
+			non-default argument follows default argument
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Python Keyword Arguments
+						<br>
+					</ul>
+		</h3>
+		<p class="main">
+			When we call a function with some values, these values get assigned
+			to the arguments according to their position. <br> For example,
+			in the above function greet(), when we called it as
+			greet("Bruce","How do you do?"), the value "Bruce" gets assigned to
+			the argument name and similarly "How do you do?" to msg. <br>
+			Python allows functions to be called using keyword arguments. When we
+			call functions in this way, the order (position) of the arguments can
+			be changed. Following calls to the above function are all valid and
+			produce the same result. <br>
+		<p class="example" style="font-size: 17px">
+			>>> # 2 keyword arguments<br> >>> greet(name = "Bruce",msg =
+			"How do you do?")<br> <br> >>> # 2 keyword arguments (out
+			of order)<br> >>> greet(msg = "How do you do?",name = "Bruce")<br>
+			<br> >>> # 1 positional, 1 keyword argument<br> >>>
+			greet("Bruce",msg = "How do you do?") <br>
+		<p class="main">
+			As we can see, we can mix positional arguments with keyword arguments
+			during a function call. But we must keep in mind that keyword
+			arguments must follow positional arguments. <br>
+		<p class="example" style="font-size: 17px">
+			greet(name="Bruce","How do you do?")<br>
+		<p class="main">
+			We would get an error as:<br>
+		<p class="example" style="font-size: 17px">SyntaxError:
+			non-keyword arg after keyword arg
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Python Arbitrary Arguments
+						<br>
+					</ul>
+		</h3>
+		<p class="main">
+			Sometimes, we do not know in advance the number of arguments that
+			will be passed into a function.Python allows us to handle this kind
+			of situation through function calls with arbitrary number of
+			arguments. <br> In the function definition we use an asterisk
+			(*) before the parameter name to denote this kind of argument. Here
+			is an example. <br>
+		<p class="example" style="font-size: 17px">
+			def greet(*names):<br> """This function greets all<br> the
+			person in the names tuple."""<br> <br> # names is a tuple
+			with arguments<br> for name in names: <br>
+			print("Hello",name)<br> <br>
+			greet("Monica","Luke","Steve","John")<br>
+		<p class="main">Output
+		<p class="example" style="font-size: 17px">Hello Monica Hello Luke
+			Hello Steve Hello John
+		<p class="main">Here, we have called the function with multiple
+			arguments. These arguments get wrapped up into a tuple before being
+			passed into the function. Inside the function, we use a for loop to
+			retrieve all the arguments back.
+	</div>
+	<a href="/function" class="previous">&laquo; Previous</a>
+
+	<a href="/recursion" class="next">Next &raquo;</a>
+
+
+	<div class='w3-sidebar w3-collapse' id='sidenav'>
+		<div id='leftmenuinner'>
+			<div class='w3-light-grey' id='leftmenuinnerinner'>
+				<h2 align="center">PYTHON</h2>
+				<p>
+				<p class="main1">
+					Introduction<br>
+				<p>
+					<a target="_top" href="/python">Getting Started</a> <a
+						target="_top" href="/silent">Silent features</a> <a target="_top"
+						href="/domain">Domain</a> <a target="_top" href="/syntax">Basic
+						syntax</a> <a target="_top" href="/variables">Variables</a> <a
+						target="_top" href="/dataTypes">Data Types</a> <a target="_top"
+						href="/typeConversion">Type Conversion</a> <a target="_top"
+						href="/input">I/O and Import</a> <a target="_top"
+						href="/operators">Operators</a> <a target="_top" href="/nameSpace">Name
+						Space</a>
+				<p class="main1">
+					Flow Control<br>
+				<p>
+					<a target="_top" href="/ifelse">if...else</a> <a target="_top"
+						href="/forLoop">For Loop</a> <a target="_top" href="/while1">While
+						Loop</a> <a target="_top" href="/breakContinue">Break and continue</a>
+					<a target="_top" href="/pass1">Pass</a>
+				<p class="main1">
+					Functions<br>
+				<p>
+					<a target="_top" href="/function">Function</a> <a target="_top" a
+						class="active" href="/argument">Argument</a> <a target="_top"
+						href="/recursion">Recursion</a> <a target="_top" href="/anonymous">Anonymous
+						Function</a> <a target="_top" href="/globalLocal">Global, Local
+						and Nonlocal</a> <a target="_top" href="/global1">Global Keyword</a> <a
+						target="_top" href="/modules">Modules</a> <a target="_top"
+						href="/package">Package</a>
+				<p class="main1">
+					Datatypes<br>
+				<p>
+					<a target="_top" href="/number">Number</a> <a target="_top"
+						href="/list">List</a> <a target="_top" href="/tuple">Tuple</a> <a
+						target="_top" href="/string">String</a> <a target="_top"
+						href="/set">Set</a> <a target="_top" href="/dictionary">Dictionary</a>
+					<a target="_top" href="/nested">Nested Dictionary</a> <a
+						target="_top" href="/arrays">Arrays</a> <a target="_top"
+						href="/matrix">Matrix</a> <a target="_top" href="/listCompre">List
+						Comprehension</a>
+				<p class="main1">
+					Python Files<br>
+				<p>
+					<a target="_top" href="/fileOperation">File Operation</a> <a
+						target="_top" href="/directory">Directory</a> <a target="_top"
+						href="/exception">Exception</a> <a target="_top"
+						href="/exceptionHand">Exception Handling</a> <a target="_top"
+						href="/userDefined">User-defined Exception</a>
+				<p class="main1">
+					Object Class<br>
+				<p>
+					<a target="_top" href="/oop">Python OOP</a> <a target="_top"
+						href="/class1">Class</a> <a target="_top" href="/inheritance">Inheritance</a>
+					<a target="_top" href="/multipleInterit">Multiple Inheritance</a> <a
+						target="_top" href="/overloading">Operator Overloading</a> <br>
+				</p>
+				<!-- Back To Top -->
+				<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+				<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+				<!-- CORE PLUGINS -->
+				<script src="static/vendor/jquery.min.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery-migrate.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/bootstrap/js/bootstrap.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL PLUGINS -->
+				<script src="static/vendor/jquery.easing.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery.back-to-top.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.smooth-scroll.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.wow.min.js" type="text/javascript"></script>
+				<script src="static/vendor/swiper/js/swiper.jquery.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/jquery.masonry.pkgd.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/imagesloaded.pkgd.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL SCRIPTS -->
+				<script src="static/js/layout.min.js" type="text/javascript"></script>
+				<script src="static/js/components/wow.min.js" type="text/javascript"></script>
+				<script src="static/js/components/swiper.min.js"
+					type="text/javascript"></script>
+				<script src="static/js/components/masonry.min.js"
+					type="text/javascript"></script>
+</body>
+<!-- END BODY -->
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8" />
+<title>Online programming tutorial</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<!-- GLOBAL MANDATORY STYLES -->
+<link
+	href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700"
+	rel="stylesheet" type="text/css">
+<link href="static/vendor/simple-line-icons/simple-line-icons.min.css"
+	rel="stylesheet" type="text/css" />
+<link href="static/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
+
+<!-- PAGE LEVEL PLUGIN STYLES -->
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/vendor/swiper/css/swiper.min.css" rel="stylesheet"
+	type="text/css" />
+
+<!-- THEME STYLES -->
+<link href="static/css/layout1.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- END HEAD -->
+<style>
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.previous {
+	border-radius: 8px;
+	margin: 24px 250px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #33adff;
+	color: black;
+}
+
+.previous1 {
+	border-radius: 8px;
+	margin: 24px -30px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #ff6699;
+	color: black;
+}
+
+.example {
+	margin-left: 140px;
+	padding: 20px;
+	width: 1050px;
+	background-color: #f2f2f2;
+	border-style: ridge;
+	color: black;
+}
+
+.next {
+	border-radius: 8px;
+	margin: 24px 180px;
+	padding: 12px 34px;
+	font-size: 20px;
+	background-color: #4dff4d;
+	color: black;
+}
+
+.main {
+	margin-left: 120px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+
+#sidenav h2 {
+	font-size: 21px;
+	padding-left: 16px;
+	margin: -4px 0 4px 0;
+	width: 204px;
+}
+
+#sidenav a {
+	font-family: "Segoe UI", Arial, sans-serif;
+	text-decoration: none;
+	display: block;
+	padding: 2px 1px 1px 16px
+}
+
+#sidenav a:hover, #sidenav a:focus {
+	color: #000000;
+	background-color: #4d94ff;
+}
+
+#sidenav a.active {
+	background-color: #66ff66;
+	color: black
+}
+
+#leftmenuinner {
+	position: fixed;
+	top: 0;
+	padding-top: 95px;
+	padding-bottom: 0;
+	height: 100%;
+	width: 220px;
+	background-color: transparent;
+}
+
+#leftmenuinnerinner {
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+#leftmenuinnerinner {
+	overflow-y: scroll
+}
+
+.bottomad {
+	float: none;
+	text-align: center
+}
+
+#skyscraper {
+	min-height: 60px
+}
+
+}
+.p {
+	text-color: #ff0000;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+p.ex1 {
+	margin-right: 50px;
+}
+
+.main1 {
+	margin-left: 50px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+</style>
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+<body id="body" data-spy="scroll" data-target=".header">
+	<!--========== HEADER ==========-->
+	<header class="header navbar-fixed-top">
+		<!-- Navbar -->
+		<nav class="navbar" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="menu-container js_nav-item">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="toggle-icon"></span>
+					</button>
+
+					<!-- Logo -->
+					<div class="logo">
+						<a class="logo-wrap" href="#body"> <img
+							class="logo-img logo-img-main-active"
+							src="static/img/logo-dark.png" alt="Asentus Logo">
+						</a>
+					</div>
+					<!-- End Logo -->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-collapse">
+					<div class="main-container">
+						<ul class="nav navbar-nav navbar-nav-right">
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/homepage">Home</a></li>
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Navbar Collapse -->
+			</div>
+		</nav>
+		<!-- Navbar -->
+	</header>
+	<!--========== END HEADER ==========-->
+	<br>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+<body style="width: 95%">
+
+	<div class="main">
+		<h1 align="center" style="color: #33adff;">Python Functions</h1>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>What is a function in Python?
+					</ul>
+		</h3>
+		<p class="main">
+			In Python, function is a group of related statements that perform a
+			specific task. <br> Functions help break our program into
+			smaller and modular chunks. As our program grows larger and larger,
+			functions make it more organized and manageable. <br>
+			Furthermore, it avoids repetition and makes code reusable.<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Syntax of Function
+						<br>
+					</ul>
+		</h3>
+		<p class="example" style="font-size: 17px">
+			def function_name(parameters):<br> """docstring"""<br>
+			statement(s)<br>
+		<p class="main">
+			Above shown is a function definition which consists of following
+			components.<br> <br> 1. Keyword def marks the start of
+			function header.<br> 2. A function name to uniquely identify it.
+			Function naming follows the same rules of writing identifiers in
+			Python.<br> 3. Parameters (arguments) through which we pass
+			values to a function. They are optional.<br> 4. A colon (:) to
+			mark the end of function header.<br> 5. Optional documentation
+			string (docstring) to describe what the function does.<br> 6.
+			One or more valid python statements that make up the function body.
+			Statements must have same indentation level (usually 4 spaces).<br>
+			7. An optional return statement to return a value from the function.<br>
+			<br>
+		<p class="example" style="font-size: 17px">
+			Example of a function<br> def greet(name):<br> """This
+			function greets to<br> the person passed in as<br>
+			parameter"""<br> print("Hello, " + name + ". Good morning!")<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						How to call a function in python?
+						<br>
+					</ul>
+		</h3>
+
+		<p class="main">Once we have defined a function, we can call it
+			from another function, program or even the Python prompt. To call a
+			function we simply type the function name with appropriate
+			parameters.
+		<p class="example" style="font-size: 17px">>>> greet('Paul')
+			Hello, Paul. Good morning!
+		<p class="main">Note: Try running the above code into the Python
+			shell to see the output.
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Docstring
+						<br>
+					</ul>
+		</h3>
+		<p class="main">
+			The first string after the function header is called the docstring
+			and is short for documentation string. It is used to explain in
+			brief, what a function does. <br> Although optional,
+			documentation is a good programming practice. Unless you can remember
+			what you had for dinner last week, always document your code. <br>
+
+			In the above example, we have a docstring immediately below the
+			function header. We generally use triple quotes so that docstring can
+			extend up to multiple lines. This string is available to us as
+			__doc__ attribute of the function. <br> <br> For example: <br>
+
+			Try running the following into the Python shell to see the output. <br>
+		<p class="example" style="font-size: 17px">
+			>>> print(greet.__doc__)<br> This function greets to<br>
+			the person passed into the<br> name parameter<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						The return statement
+						<br>
+					</ul>
+		</h3>
+
+		<p class="main">
+			The return statement is used to exit a function and go back to the
+			place from where it was called.<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Syntax of return
+						<br>
+					</ul>
+		</h3>
+		<p class="example" style="font-size: 17px">
+			return [expression_list]<br>
+		<p class="main">This statement can contain expression which gets
+			evaluated and the value is returned. If there is no expression in the
+			statement or the return statement itself is not present inside a
+			function, then the function will return the None object. For example:
+
+
+		<p class="example" style="font-size: 17px">>>> print(greet("May"))
+			Hello, May. Good morning! None
+		<p class="main">Here, None is the returned value.
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Example of return
+						<br>
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			def absolute_value(num):<br> """This function returns the
+			absolute<br> value of the entered number"""<br> <br>
+			if num >= 0:<br> return num<br> else:<br> return -num<br>
+			<br> # Output: 2<br> print(absolute_value(2))<br> <br>
+			# Output: 4<br> print(absolute_value(-4))<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						How Function works in Python?
+						<br>
+					</ul>
+		</h3>
+
+		<p align="center" class="main">
+			<img class="img-responsive" src="static/img/970x647/18.jpg"
+				alt="Python Image">
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Scope and Lifetime of variables
+						<br>
+					</ul>
+		</h3>
+
+		<p class="main">
+			Scope of a variable is the portion of a program where the variable is
+			recognized. Parameters and variables defined inside a function is not
+			visible from outside. Hence, they have a local scope. <br>
+			Lifetime of a variable is the period throughout which the variable
+			exits in the memory. The lifetime of variables inside a function is
+			as long as the function executes. <br> They are destroyed once
+			we return from the function. Hence, a function does not remember the
+			value of a variable from its previous calls. <br> Here is an
+			example to illustrate the scope of a variable inside a function. <br>
+		<p class="example" style="font-size: 17px">
+			def my_func():<br> x = 10<br> print("Value inside
+			function:",x)<br> <br> x = 20<br> my_func()<br>
+			print("Value outside function:",x)<br>
+		<p class="main">
+			Output<br>
+		<p class="example" style="font-size: 17px">
+			Value inside function: 10<br> Value outside function: 20<br>
+		<p class="main">
+			Here, we can see that the value of x is 20 initially. Even though the
+			function my_func() changed the value of x to 10, it did not effect
+			the value outside the function. <br> This is because the
+			variable x inside the function is different (local to the function)
+			from the one outside. Although they have same names, they are two
+			different variables with different scope. <br> On the other
+			hand, variables outside of the function are visible from inside. They
+			have a global scope. <br> We can read these values from inside
+			the function but cannot change (write) them. In order to modify the
+			value of variables outside the function, they must be declared as
+			global variables using the keyword global. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Types of Functions
+						<br>
+					</ul>
+		</h3>
+		<p class="main">
+			Basically, we can divide functions into the following two types:<br>
+			<br> 1. Built-in functions - Functions that are built into
+			Python.<br> 2. User-defined functions - Functions defined by the
+			users themselves.<br>
+	</div>
+	<a href="/pass1" class="previous">&laquo; Previous</a>
+	<a href="#" class="previous1">Take Assessment</a>
+	<a href="/argument" class="next">Next &raquo;</a>
+
+
+	<div class='w3-sidebar w3-collapse' id='sidenav'>
+		<div id='leftmenuinner'>
+			<div class='w3-light-grey' id='leftmenuinnerinner'>
+				<h2 align="center">PYTHON</h2>
+				<p>
+				<p class="main1">
+					Introduction<br>
+				<p>
+					<a target="_top" href="/python">Getting Started</a> <a
+						target="_top" href="/silent">Silent features</a> <a target="_top"
+						href="/domain">Domain</a> <a target="_top" href="/syntax">Basic
+						syntax</a> <a target="_top" href="/variables">Variables</a> <a
+						target="_top" href="/dataTypes">Data Types</a> <a target="_top"
+						href="/typeConversion">Type Conversion</a> <a target="_top"
+						href="/input">I/O and Import</a> <a target="_top"
+						href="/operators">Operators</a> <a target="_top" href="/nameSpace">Name
+						Space</a>
+				<p class="main1">
+					Flow Control<br>
+				<p>
+					<a target="_top" href="/ifelse">if...else</a> <a target="_top"
+						href="/forLoop">For Loop</a> <a target="_top" href="/while1">While
+						Loop</a> <a target="_top" href="/breakContinue">Break and continue</a>
+					<a target="_top" href="/pass1">Pass</a>
+				<p class="main1">
+					Functions<br>
+				<p>
+					<a target="_top" a class="active" href="/function">Function</a> <a
+						target="_top" href="/argument">Argument</a> <a target="_top"
+						href="/recursion">Recursion</a> <a target="_top" href="/anonymous">Anonymous
+						Function</a> <a target="_top" href="/globalLocal">Global, Local
+						and Nonlocal</a> <a target="_top" href="/global1">Global Keyword</a> <a
+						target="_top" href="/modules">Modules</a> <a target="_top"
+						href="/package">Package</a>
+				<p class="main1">
+					Datatypes<br>
+				<p>
+					<a target="_top" href="/number">Number</a> <a target="_top"
+						href="/list">List</a> <a target="_top" href="/tuple">Tuple</a> <a
+						target="_top" href="/string">String</a> <a target="_top"
+						href="/set">Set</a> <a target="_top" href="/dictionary">Dictionary</a>
+					<a target="_top" href="/nested">Nested Dictionary</a> <a
+						target="_top" href="/arrays">Arrays</a> <a target="_top"
+						href="/matrix">Matrix</a> <a target="_top" href="/listCompre">List
+						Comprehension</a>
+				<p class="main1">
+					Python Files<br>
+				<p>
+					<a target="_top" href="/fileOperation">File Operation</a> <a
+						target="_top" href="/directory">Directory</a> <a target="_top"
+						href="/exception">Exception</a> <a target="_top"
+						href="/exceptionHand">Exception Handling</a> <a target="_top"
+						href="/userDefined">User-defined Exception</a>
+				<p class="main1">
+					Object Class<br>
+				<p>
+					<a target="_top" href="/oop">Python OOP</a> <a target="_top"
+						href="/class1">Class</a> <a target="_top" href="/inheritance">Inheritance</a>
+					<a target="_top" href="/multipleInterit">Multiple Inheritance</a> <a
+						target="_top" href="/overloading">Operator Overloading</a> <br>
+				</p>
+				<!-- Back To Top -->
+				<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+				<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+				<!-- CORE PLUGINS -->
+				<script src="static/vendor/jquery.min.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery-migrate.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/bootstrap/js/bootstrap.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL PLUGINS -->
+				<script src="static/vendor/jquery.easing.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery.back-to-top.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.smooth-scroll.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.wow.min.js" type="text/javascript"></script>
+				<script src="static/vendor/swiper/js/swiper.jquery.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/jquery.masonry.pkgd.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/imagesloaded.pkgd.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL SCRIPTS -->
+				<script src="static/js/layout.min.js" type="text/javascript"></script>
+				<script src="static/js/components/wow.min.js" type="text/javascript"></script>
+				<script src="static/js/components/swiper.min.js"
+					type="text/javascript"></script>
+				<script src="static/js/components/masonry.min.js"
+					type="text/javascript"></script>
+</body>
+<!-- END BODY -->
+</html>

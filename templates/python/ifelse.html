@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8" />
+<title>Online programming tutorial</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+
+<!-- GLOBAL MANDATORY STYLES -->
+<link
+	href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700"
+	rel="stylesheet" type="text/css">
+<link href="static/vendor/simple-line-icons/simple-line-icons.min.css"
+	rel="stylesheet" type="text/css" />
+<link href="static/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet" type="text/css" />
+
+<!-- PAGE LEVEL PLUGIN STYLES -->
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/vendor/swiper/css/swiper.min.css" rel="stylesheet"
+	type="text/css" />
+
+<!-- THEME STYLES -->
+<link href="static/css/layout1.min.css" rel="stylesheet" type="text/css" />
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="favicon.ico" />
+<!-- END HEAD -->
+<style>
+a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+
+a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.previous {
+	border-radius: 8px;
+	margin: 24px 250px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #33adff;
+	color: black;
+}
+
+.previous1 {
+	border-radius: 8px;
+	margin: 24px -30px;
+	padding: 12px 34px;
+	font-size: 18px;
+	background-color: #ff6699;
+	color: black;
+}
+
+.example {
+	margin-left: 140px;
+	padding: 20px;
+	width: 1050px;
+	background-color: #f2f2f2;
+	border-style: ridge;
+	color: black;
+}
+
+.next {
+	border-radius: 8px;
+	margin: 24px 180px;
+	padding: 12px 34px;
+	font-size: 20px;
+	background-color: #4dff4d;
+	color: black;
+}
+
+.main {
+	margin-left: 120px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+
+#sidenav h2 {
+	font-size: 21px;
+	padding-left: 16px;
+	margin: -4px 0 4px 0;
+	width: 204px;
+}
+
+#sidenav a {
+	font-family: "Segoe UI", Arial, sans-serif;
+	text-decoration: none;
+	display: block;
+	padding: 2px 1px 1px 16px
+}
+
+#sidenav a:hover, #sidenav a:focus {
+	color: #000000;
+	background-color: #4d94ff;
+}
+
+#sidenav a.active {
+	background-color: #66ff66;
+	color: black
+}
+
+#leftmenuinner {
+	position: fixed;
+	top: 0;
+	padding-top: 95px;
+	padding-bottom: 0;
+	height: 100%;
+	width: 220px;
+	background-color: transparent;
+}
+
+#leftmenuinnerinner {
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+#leftmenuinnerinner {
+	overflow-y: scroll
+}
+
+.bottomad {
+	float: none;
+	text-align: center
+}
+
+#skyscraper {
+	min-height: 60px
+}
+
+}
+.p {
+	text-color: #ff0000;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+}
+
+p.ex1 {
+	margin-right: 50px;
+}
+
+.main1 {
+	margin-left: 50px;
+	font-size: 20px;
+	color: #000000; /* Same as the width of the sidenav */
+}
+</style>
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+<body id="body" data-spy="scroll" data-target=".header">
+	<!--========== HEADER ==========-->
+	<header class="header navbar-fixed-top">
+		<!-- Navbar -->
+		<nav class="navbar" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="menu-container js_nav-item">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="toggle-icon"></span>
+					</button>
+
+					<!-- Logo -->
+					<div class="logo">
+						<a class="logo-wrap" href="#body"> <img
+							class="logo-img logo-img-main-active"
+							src="static/img/logo-dark.png" alt="Asentus Logo">
+						</a>
+					</div>
+					<!-- End Logo -->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-collapse">
+					<div class="main-container">
+						<ul class="nav navbar-nav navbar-nav-right">
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/homepage">Home</a></li>
+							<li class="js_nav-item nav-item"><a
+								class="nav-item-child nav-item-hover" href="/">Logout</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Navbar Collapse -->
+			</div>
+		</nav>
+		<!-- Navbar -->
+	</header>
+	<!--========== END HEADER ==========-->
+	<br>
+	<BR>
+	<BR>
+	<BR>
+	<BR>
+<body style="width: 95%">
+
+	<div class="main">
+		<h1 align="center" style="color: #33adff;">PYTHON if...else
+			STATEMENT</h1>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>What are if...else statement in Python?
+					</ul>
+		</h3>
+		<p class="main">
+
+			Decision making is required when we want to execute a code only if a
+			certain condition is satisfied. <br> The if…elif…else statement
+			is used in Python for decision making. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>
+						Python if Statement Syntax
+						<br>
+					</ul>
+		</h3>
+		<p class="example" style="font-size: 17px">
+			if test expression: <br> statement(s) <br>
+		<p class="main">
+			Here, the program evaluates the test expression and will execute
+			statement(s) only if the text expression is True. <br> If the
+			text expression is False, the statement(s) is not executed. <br>
+			In Python, the body of the if statement is indicated by the
+			indentation. Body starts with an indentation and the first unindented
+			line marks the end. <br> Python interprets non-zero values as
+			True. None and 0 are interpreted as False. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Python if Statement Flowchart
+					</ul>
+		</h3>
+		<p align="center" class="main">
+			<img class="img-responsive" src="static/img/970x647/9.jpg"
+				alt="Python Image">
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Example: Python if Statement
+					</ul>
+		</h3>
+		<br>
+		<p class="example" style="font-size: 17px">
+			# If the number is positive, we print an appropriate message<br>
+			<br> num = 3<br> if num > 0:<br> print(num, "is a
+			positive number.")<br> print("This is always printed.")<br>
+			<br> num = -1<br> if num > 0:<br> print(num, "is a
+			positive number.")<br> print("This is also always printed.")<br>
+			<br>
+		<p class="main">When you run the program, the output will be:
+		<p class="example" style="font-size: 17px">
+			3 is a positive number<br> This is always printed<br> This
+			is also always printed.<br>
+		<p class="main">
+			In the above example, num > 0 is the test expression. <br> The
+			body of if is executed only if this evaluates to True. <br> When
+			variable num is equal to 3, test expression is true and body inside
+			body of if is executed. <br> If variable num is equal to -1,
+			test expression is false and body inside body of if is skipped. <br>
+			The print() statement falls outside of the if block (unindented).
+			Hence, it is executed regardless of the test expression. <br>
+			<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Python if...else Statement
+					</ul>
+		</h3>
+		<p class="main">
+		<h3 style="font-size: 22px">
+			<ul>
+				<ul>
+					<ul>Syntax of if...else
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			if test expression:<br> Body of if<br> else:<br> Body
+			of else<br>
+		<p class="main">
+			The if..else statement evaluates test expression and will execute
+			body of if only when test condition is True. <br> If the
+			condition is False, body of else is executed. Indentation is used to
+			separate the blocks. <br>
+		<p align="center" class="main">
+			<img class="img-responsive" src="static/img/970x647/10.jpg"
+				alt="Python Image">
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Example of if...else
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			# Program checks if the number is positive or negative<br> # And
+			displays an appropriate message<br> <br> num = 3<br> <br>
+			# Try these two variations as well. <br> # num = -5<br> #
+			num = 0<br> <br> if num >= 0:<br> print("Positive or
+			Zero")<br> else:<br> print("Negative number")<br>
+		<p class="main">
+			In the above example, when num is equal to 3, the test expression is
+			true and body of if is executed and body of else is skipped. <br>
+			If num is equal to -5, the test expression is false and body of else
+			is executed and body of if is skipped. <br> If num is equal to
+			0, the test expression is true and body of if is executed and body of
+			else is skipped. <br>
+			<br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Python if...elif...else Statement
+					</ul>
+		</h3>
+		<p class="main">
+		<h3 style="font-size: 22px">
+			<ul>
+				<ul>
+					<ul>Syntax of if...elif...else
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			if test expression:<br> Body of if<br> elif test
+			expression:<br> Body of elif<br> else:<br> Body of
+			else<br>
+		<p class="main">
+			The elif is short for else if. It allows us to check for multiple
+			expressions. <br> If the condition for if is False, it checks
+			the condition of the next elif block and so on. <br> If all the
+			conditions are False, body of else is executed. <br> Only one
+			block among the several if...elif...else blocks is executed according
+			to the condition. <br> The if block can have only one else
+			block. But it can have multiple elif blocks. <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Flowchart of if...elif...else
+					</ul>
+		</h3>
+		<p align="center" class="main">
+			<img class="img-responsive" src="static/img/970x647/11.jpg"
+				alt="Python Image">
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Example of if...elif...else
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			# In this program, <br> # we check if the number is positive or<br>
+			# negative or zero and <br> # display an appropriate message<br>
+			<br> num = 3.4<br> <br> # Try these two variations as
+			well:<br> # num = 0<br> # num = -4.5<br> <br> if
+			num > 0:<br> print("Positive number")<br> elif num == 0:<br>
+			print("Zero")<br> else:<br>
+			<br> print("Negative number")<br> <br>
+		<p class="main">
+			When variable num is positive, Positive number is printed.<br>
+
+			If num is equal to 0, Zero is printed.<br> If num is negative,
+			Negative number is printed <br>
+		<p class="main">
+		<h3 style="font-size: 25px">
+			<ul>
+				<ul>
+					<ul>Python Nested if statements
+					</ul>
+		</h3>
+		<p class="main">
+			We can have a if...elif...else statement inside another
+			if...elif...else statement. This is called nesting in computer
+			programming. <br> Any number of these statements can be nested
+			inside one another. Indentation is the only way to figure out the
+			level of nesting. This can get confusing, so must be avoided if we
+			can. <br>
+		<p class="example" style="font-size: 17px">
+			Python Nested if Example # In this program, we input a number<br>
+			# check if the number is positive or<br> # negative or zero and
+			display<br> # an appropriate message<br> # This time we use
+			nested if<br> <br> num = float(input("Enter a number: "))<br>
+			if num >= 0:<br> if num == 0:<br> print("Zero")<br>
+			else:<br> print("Positive number")<br> else:<br>
+			print("Negative number")<br>
+		<p class="main">
+		<h3 style="font-size: 22px">
+			<ul>
+				<ul>
+					<ul>Output 1
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			Enter a number: 5<br> Positive number<br>
+		<p class="main">
+		<h3 style="font-size: 22px">
+			<ul>
+				<ul>
+					<ul>Output 2
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			Enter a number: -1<br> Negative number<br>
+		<p class="main">
+		<h3 style="font-size: 22px">
+			<ul>
+				<ul>
+					<ul>Output 3
+					</ul>
+		</h3>
+
+		<p class="example" style="font-size: 17px">
+			Enter a number: 0<br> Zero<br>
+	</div>
+	<a href="/nameSpace" class="previous">&laquo; Previous</a>
+	<a href="#" class="previous1">Take Assessment</a>
+	<a href="/forLoop" class="next">Next &raquo;</a>
+
+
+	<div class='w3-sidebar w3-collapse' id='sidenav'>
+		<div id='leftmenuinner'>
+			<div class='w3-light-grey' id='leftmenuinnerinner'>
+				<h2 align="center">PYTHON</h2>
+				<p>
+				<p class="main1">
+					Introduction<br>
+				<p>
+					<a target="_top" href="/python">Getting Started</a> <a
+						target="_top" href="/silent">Silent features</a> <a target="_top"
+						href="/domain">Domain</a> <a target="_top" href="/syntax">Basic
+						syntax</a> <a target="_top" href="/variables">Variables</a> <a
+						target="_top" href="/dataTypes">Data Types</a> <a target="_top"
+						href="/typeConversion">Type Conversion</a> <a target="_top"
+						href="/input">I/O and Import</a> <a target="_top"
+						href="/operators">Operators</a> <a target="_top" href="/nameSpace">Name
+						Space</a>
+				<p class="main1">
+					Flow Control<br>
+				<p>
+					<a target="_top" a class="active" href="/ifelse">if...else</a> <a
+						target="_top" href="/forLoop">For Loop</a> <a target="_top"
+						href="/while1">While Loop</a> <a target="_top"
+						href="/breakContinue">Break and continue</a> <a target="_top"
+						href="/pass1">Pass</a>
+				<p class="main1">
+					Functions<br>
+				<p>
+					<a target="_top" href="/function">Function</a> <a target="_top"
+						href="/argument">Argument</a> <a target="_top" href="/recursion">Recursion</a>
+					<a target="_top" href="/anonymous">Anonymous Function</a> <a
+						target="_top" href="/globalLocal">Global, Local and Nonlocal</a> <a
+						target="_top" href="/global1">Global Keyword</a> <a target="_top"
+						href="/modules">Modules</a> <a target="_top" href="/package">Package</a>
+				<p class="main1">
+					Datatypes<br>
+				<p>
+					<a target="_top" href="/number">Number</a> <a target="_top"
+						href="/list">List</a> <a target="_top" href="/tuple">Tuple</a> <a
+						target="_top" href="/string">String</a> <a target="_top"
+						href="/set">Set</a> <a target="_top" href="/dictionary">Dictionary</a>
+					<a target="_top" href="/nested">Nested Dictionary</a> <a
+						target="_top" href="/arrays">Arrays</a> <a target="_top"
+						href="/matrix">Matrix</a> <a target="_top" href="/listCompre">List
+						Comprehension</a>
+				<p class="main1">
+					Python Files<br>
+				<p>
+					<a target="_top" href="/fileOperation">File Operation</a> <a
+						target="_top" href="/directory">Directory</a> <a target="_top"
+						href="/exception">Exception</a> <a target="_top"
+						href="/exceptionHand">Exception Handling</a> <a target="_top"
+						href="/userDefined">User-defined Exception</a>
+				<p class="main1">
+					Object Class<br>
+				<p>
+					<a target="_top" href="/oop">Python OOP</a> <a target="_top"
+						href="/class1">Class</a> <a target="_top" href="/inheritance">Inheritance</a>
+					<a target="_top" href="/multipleInterit">Multiple Inheritance</a> <a
+						target="_top" href="/overloading">Operator Overloading</a> <br>
+				</p>
+				<!-- Back To Top -->
+				<a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
+
+				<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+				<!-- CORE PLUGINS -->
+				<script src="static/vendor/jquery.min.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery-migrate.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/bootstrap/js/bootstrap.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL PLUGINS -->
+				<script src="static/vendor/jquery.easing.js" type="text/javascript"></script>
+				<script src="static/vendor/jquery.back-to-top.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.smooth-scroll.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/jquery.wow.min.js" type="text/javascript"></script>
+				<script src="static/vendor/swiper/js/swiper.jquery.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/jquery.masonry.pkgd.min.js"
+					type="text/javascript"></script>
+				<script src="static/vendor/masonry/imagesloaded.pkgd.min.js"
+					type="text/javascript"></script>
+
+				<!-- PAGE LEVEL SCRIPTS -->
+				<script src="static/js/layout.min.js" type="text/javascript"></script>
+				<script src="static/js/components/wow.min.js" type="text/javascript"></script>
+				<script src="static/js/components/swiper.min.js"
+					type="text/javascript"></script>
+				<script src="static/js/components/masonry.min.js"
+					type="text/javascript"></script>
+</body>
+<!-- END BODY -->
+</html>
